@@ -1,0 +1,12 @@
+<h2>List Of Employees</h2>>
+
+<ul class="EmpList">
+    <li *ngFor="let emp of EmpList">
+        <span>{{emp.id}} </span>  {{emp.name}}
+    </li>
+</ul>
+
+<input #id />
+<button (click)="Deleteemployee(id.value)">Remove</button><br>
+
+<button (click)="GoBack()">Go Back</button>
